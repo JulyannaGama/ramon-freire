@@ -139,9 +139,8 @@
   .plans-container {
     flex-direction: column;
     align-items: center;
-    background-color: #d12d35 !important;
-    height: 70vh;
- 
+     height: 65vh;
+  
   }
   .plans {
     padding-top: 2rem;
@@ -151,6 +150,7 @@
   .plans-title {
     margin-bottom: 1rem !important;
     font-size: 2rem !important;
+    padding-top: 1.5rem;
   }
 
   .plan-card {
