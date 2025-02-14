@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap');
+
+.evolution {
+  position: relative;
+  background: linear-gradient(135deg, #1a1a1a 10%, #222222 40%, #FFCC00 90%);
+  color: white;
+  text-align: center;
+  padding: 5rem 0;
+  overflow: hidden;
+
+  .floating-icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .icon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    opacity: 0.1;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .icon-1 {
+    top: 10%;
+    left: 5%;
+    background-image: url('../../assets/icons/halter.png');
+    animation: float1 6s infinite ease-in-out;
+  }
+
+  .icon-2 {
+    bottom: 20%;
+    right: 10%;
+    background-image: url('../../assets/icons/anilha.png');
+    animation: float2 8s infinite ease-in-out;
+  }
+
+  .icon-3 {
+    top: 50%;
+    left: 45%;
+    background-image: url('../../assets/icons/peso.png');
+    animation: float3 7s infinite ease-in-out;
+  }
+
+  .borders {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    z-index: 2;
+  }
+
+  .border-line {
+    width: 100%;
+    height: 2px;
+    background-color: #FFCC00;
+  }
+
+  .evolution-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFCC00;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 3rem;
+  }
+
+  .swiper {
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+    z-index: 2;
+  }
+
+  .evolution-card {
+    background: rgba(24, 20, 20, 0.9);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 204, 0, 0.6);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      border-color: #FFCC00;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: #FFCC00;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #FFCC00;
+  }
+}
+
+@keyframes float1 {
+  0% { transform: translateY(0); opacity: 0.1; }
+  50% { transform: translateY(-10px); opacity: 0.2; }
+  100% { transform: translateY(0); opacity: 0.1; }
+}
+
+@keyframes float2 {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.1; }
+  50% { transform: translateY(15px) rotate(10deg); opacity: 0.2; }
+  100% { transform: translateY(0) rotate(0deg); opacity: 0.1; }
+}
+
+@keyframes float3 {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.1; }
+  50% { transform: translateY(-15px) rotate(-10deg); opacity: 0.2; }
+  100% { transform: translateY(0) rotate(0deg); opacity: 0.1; }
+}
+
+@media (max-width: 1024px) {
+  .swiper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .evolution {
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .evolution-title {
+    font-size: 2rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 6rem !important;
+  }
+}

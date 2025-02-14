@@ -1,10 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
 .plans {
-  padding: 2rem;
-  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  background: #121212;
   text-align: center;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  height: 80vh;
+
+  .plans-title {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    color: #FFD700;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 3rem;
+  }
+
+  .plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+  }
+
+  .plan-card {
+    background: linear-gradient(145deg, #1c1c1c, #383838);
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 400px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+    &:nth-child(1) {
+      transition-delay: 0.2s;
+    }
+
+    &:nth-child(2) {
+      transition-delay: 0.4s;
+    }
+
+    &:nth-child(3) {
+      transition-delay: 0.6s;
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.7);
+    }
+
+    .plan-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.2rem;
+    }
+
+    .plan-title {
+      font-size: clamp(1.2rem, 2.5vw, 1.9rem);
+      font-weight: bold;
+      color: #FFD700;
+      font-family: 'Bebas Neue', sans-serif;
+      text-align: center;
+    }
+
+    .plan-subtitle {
+      font-size: clamp(0.8rem, 1.5vw, 1rem);
+      color: #ddd;
+      text-align: center;
+    }
+
+    .plan-price {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+      &:hover {
+        color: #FFD700;
+        transform: scale(1.1);
+      }
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1.5rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+        color: #ddd;
+        margin-bottom: 0.8rem;
+
+        .icon-check {
+          color: #FFD700;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .plan-button {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      font-size: clamp(0.8rem, 1.5vw, 1rem);
+      font-weight: bold;
+      background: #FFD700;
+      color: #121212;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+
+      &:hover {
+        background: #ffbf00;
+      }
+    }
+
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
-.plans h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+@media (max-width: 768px) {
+  .plans-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .plans {
+    padding-top: 2rem;
+  }
+  .plans-title{
+    margin-bottom: 1rem !important;
+    font-size: 2rem !important;
+  }
+
+  .plan-card {
+    width: 250px !important;
+    height: 250px !important;
+    padding: 1rem !important;
+  }
+  .plan-price{
+    margin-bottom: 0.5rem !important;
+  }
+
+  .plan-features li {
+    font-size: 1rem !important;
+    margin-bottom: 0 !important;
+  }
+  .plan-features {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .plans-container {
+    gap: 1.5rem !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .plan-card {
+    width: 250px !important;
+    .plan-button{
+       padding: 0.5rem !important;
+    }
+  }
 }

@@ -1,6 +1,37 @@
-footer {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+
+
+.footer {
+  background: #121212;
+  color: white;
   text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
+  padding: 1.5rem 0;
+  border-top: 2px solid #FFD700;  
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size:clamp(0.938rem, 1.119vw + 0.22rem, 1.563rem);
+    font-family: 'Bebas Neue', sans-serif;
+
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      color: #FFD700;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+        color: #ffbf00;
+      }
+    }
+  }
 }
