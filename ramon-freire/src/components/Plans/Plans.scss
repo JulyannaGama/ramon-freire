@@ -139,8 +139,9 @@
   .plans-container {
     flex-direction: column;
     align-items: center;
-    background-color: #d17c2d !important;
-
+    background-color: #d12d35 !important;
+    height: 70vh;
+ 
   }
   .plans {
     padding-top: 2rem;
@@ -153,8 +154,8 @@
   }
 
   .plan-card {
-    width: 250px !important;
-    height: 200px !important;
+    width: 300px !important;
+    height: 220px !important;
     justify-content: space-evenly !important;
     padding: 0.5rem 1rem !important;
 
@@ -163,7 +164,7 @@
     }
 
     .plan-title {
-      font-size: 16px !important;
+      font-size: 20px !important;
 
     }
 
@@ -192,7 +193,7 @@
   }
 
   .plans-container {
-    gap: 5px !important;
+    gap: 35px !important;
   }
 
 }
