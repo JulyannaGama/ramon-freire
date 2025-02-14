@@ -2,7 +2,7 @@
 
 .plans {
   padding-top: 3rem;
-   background: #121212;
+  background: #121212;
   text-align: center;
   color: white;
   font-family: 'Bebas Neue', sans-serif;
@@ -20,7 +20,7 @@
     justify-content: center;
     gap: 5rem;
     flex-wrap: wrap;
-   }
+  }
 
   .plan-card {
     background: linear-gradient(145deg, #1c1c1c, #383838);
@@ -139,6 +139,8 @@
   .plans-container {
     flex-direction: column;
     align-items: center;
+    background-color: #a4da71 !important;
+
   }
 }
 
@@ -155,23 +157,36 @@
 
   .plan-card {
     width: 250px !important;
-    height: 220px !important;
-    padding: 1rem 2rem !important;
-     .plan-price{
+    height: 200px !important;
+    justify-content: space-evenly !important;
+    padding: 0.5rem 1rem !important;
+
+    .plan-price {
       margin-bottom: 0 !important;
+    }
+
+    .plan-title {
+      font-size: 01rem !important;
+
+    }
+
+    .plan-subtitle {
+      font-size: 0.8rem !important;
     }
 
     .plan-button {
       padding: 0.5rem !important;
-     }
+    }
   }
 
   .plan-price {
     margin-bottom: 0.5rem !important;
+    font-size: 0.8rem !important;
+
   }
 
   .plan-features li {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
     margin-bottom: 0 !important;
   }
 
@@ -180,7 +195,7 @@
   }
 
   .plans-container {
-    gap: 1.5rem !important;
+    gap: 0.7rem !important;
   }
 
 }

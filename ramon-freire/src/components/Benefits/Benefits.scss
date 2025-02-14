@@ -269,24 +269,24 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 120px !important;
+    height: 90px !important;
+    padding: 1rem !important;
   }
 
   .benefit-card img {
     width: 100%;
-    height: auto;
-    max-height: 180px;
-  }
+   }
 
   .benefit-img {
-    width: 120px !important;
-    height: 150px !important;
+    width: 100px !important;
+    height: 120px !important;
   }
 
   .benefit-text {
     width: 100%;
     text-align: center;
     padding: 0 !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .benefit-text h3 {
