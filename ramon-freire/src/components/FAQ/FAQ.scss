@@ -115,25 +115,31 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .faq-title {
     font-size: 2rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
   .faq-cards {
     grid-template-columns: repeat(1, 1fr) !important;
     width: 90% !important;
+ 
   }
 
   .faq-card {
     height: 150px;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex;
+    flex-direction: column;
 
     h3 {
-      font-size: 1.2rem !important;
+      font-size: 1rem !important;
     }
 
     p {
-      font-size: 0.8rem !important;
+      font-size: 0.7rem !important;
     }
   }
 }
