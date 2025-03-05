@@ -4,7 +4,7 @@ import imgBanner from "../../assets/imgBanner.png";
 import { Typewriter } from "react-simple-typewriter";
 import { FaDumbbell, FaWeightHanging, FaRunning, FaHeartbeat } from "react-icons/fa";
 
-const whatsappNumber = "5575998587858";
+const whatsappNumber = "00000000000";
 
 const handleWhatsAppClick = (message) => {
   const encodedMessage = encodeURIComponent(message);

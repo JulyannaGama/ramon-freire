@@ -12,7 +12,7 @@ const Footer = () => {
           <a href="https://wa.me/seu-numero" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp className="icon" />
           </a>
-          <a href="https://www.instagram.com/ramfrey.ifbbpro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="icon" />
           </a>
           <a href="mailto:seuemail@email.com">
